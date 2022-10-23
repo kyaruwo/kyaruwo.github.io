@@ -1,1 +1,1 @@
-# kyaruwo.github.io
+life is not daijoubu
