@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="root" class="theme-dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,9 +8,20 @@
     <title>kyaruwo</title>
 
     <link rel="stylesheet" href="css/index.css" />
+
+    <script src="js/index.js"></script>
   </head>
+
+  <header>
+    <h id="nav-icon">kyaruwo</h>
+    <button id="theme-btn" onclick="change_theme()">
+      <img id="theme-btn-img" src="assets/theme-light.png" />
+    </button>
+  </header>
 
   <body>
     <p id="wah">life is not daijoubu</p>
   </body>
+
+  <footer></footer>
 </html>
