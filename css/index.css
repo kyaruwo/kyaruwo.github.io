@@ -6,9 +6,15 @@ html {
   background-color: black;
   color: white;
 }
+.theme-dark a {
+  color: white;
+}
 
 .theme-light {
   background-color: white;
+  color: black;
+}
+.theme-light a {
   color: black;
 }
 
@@ -18,14 +24,25 @@ html {
 }
 
 #theme-btn {
+  float: right;
   background: none;
   border: none;
-  padding: 0px;
-  float: right;
+  padding: 0;
 }
 #theme-btn-img {
   vertical-align: middle;
   border-radius: 42.69%;
+}
+
+#nav-links {
+  float: right;
+  margin: 0.69rem 4rem;
+  display: flex;
+  column-gap: 2.2rem;
+}
+#nav-links a {
+  text-decoration: none;
+  font-size: larger;
 }
 
 #wah {
