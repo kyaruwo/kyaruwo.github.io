@@ -17,18 +17,24 @@
   </head>
 
   <header>
-    <h id="nav-icon">kyaruwo</h>
-
     <button id="theme-btn" onclick="change_theme()">
-      <img id="theme-btn-img" src="assets/theme-light.png" />
+      <img id="theme-btn-img" src="assets/theme-tolight.png" />
     </button>
 
-    <div id="nav-links">
-      <a href="#root">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <h id="nav-icon">kyaruwo</h>
+
+    <div id="hamborgar">
+      <button id="borgarbtn" onclick="hide_borgar()">=</button>
+      <div id="nav-links" class="hide-borgar">
+        <ul>
+          <li><a href="#root" onclick="hide_borgar()">Home</a></li>
+          <li><a href="#about" onclick="hide_borgar()">About</a></li>
+          <li><a href="#projects" onclick="hide_borgar()">Projects</a></li>
+          <li><a href="#contact" onclick="hide_borgar()">Contact</a></li>
+        </ul>
+      </div>
     </div>
+    <div id="hamborgar-bg"></div>
   </header>
 
   <body>
