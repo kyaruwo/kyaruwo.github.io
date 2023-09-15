@@ -11,9 +11,6 @@ a {
   background-color: black;
   color: white;
 }
-.theme-dark a {
-  color: white;
-}
 
 #theme-btn {
   position: absolute;
