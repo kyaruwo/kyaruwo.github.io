@@ -1,8 +1,13 @@
 html {
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
   margin: 1rem 12% 1rem 12%;
+}
+
+span {
+  cursor: default;
 }
 
 a {
@@ -17,7 +22,6 @@ a {
     align-items: center;
   }
   #wordmark {
-    cursor: default;
     font-size: 2rem;
   }
   #nav {
@@ -31,6 +35,45 @@ a {
   #nav a:hover {
     color: #575068;
     transition: ease-out 0.42s;
+  }
+
+  #summary {
+    display: flex;
+    justify-content: center;
+    column-gap: 6.9%;
+    margin: 8rem 0 20rem 0;
+  }
+  #portrait {
+    width: 42%;
+    height: 42%;
+  }
+  #detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #greeting {
+    font-size: 1.69rem;
+  }
+  #username {
+    font-size: 4.2rem;
+  }
+  #role {
+    font-size: 2rem;
+  }
+
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    /* temp */
+    row-gap: 48rem;
+    /* temp */
+  }
+  #content span {
+    font-size: 1.69rem;
   }
 }
 
