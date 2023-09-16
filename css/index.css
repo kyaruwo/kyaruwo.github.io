@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
@@ -17,17 +18,20 @@ a {
 
 @media only screen and (min-width: 717px) {
   header {
+    scroll-snap-align: end;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   #wordmark {
+    font-weight: 600;
     font-size: 2rem;
   }
   #nav {
     cursor: default;
   }
   #nav a {
+    font-weight: 400;
     font-size: 1.2rem;
     margin: 1.69rem;
     transition: ease-in 0.69s;
@@ -41,7 +45,7 @@ a {
     display: flex;
     justify-content: center;
     column-gap: 6.9%;
-    margin: 8rem 0 20rem 0;
+    margin: 8rem 0 12rem 0;
   }
   #portrait {
     width: 42%;
@@ -54,12 +58,15 @@ a {
     align-items: center;
   }
   #greeting {
+    font-weight: 200;
     font-size: 1.69rem;
   }
   #username {
+    font-weight: 800;
     font-size: 4.2rem;
   }
   #role {
+    font-weight: 400;
     font-size: 2rem;
   }
 
@@ -72,7 +79,12 @@ a {
     row-gap: 48rem;
     /* temp */
   }
-  #content span {
+  #content > div {
+    scroll-snap-align: start;
+    padding: 2rem;
+  }
+  #content > div > span {
+    font-weight: 400;
     font-size: 1.69rem;
   }
 }
