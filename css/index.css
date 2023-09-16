@@ -10,7 +10,7 @@ a {
   color: white;
 }
 
-@media only screen and (min-width: 711px) {
+@media only screen and (min-width: 717px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 711px) {
+@media only screen and (max-width: 717px) {
   html {
     display: none;
   }
