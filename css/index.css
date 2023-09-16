@@ -1,0 +1,41 @@
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 1rem 12% 1rem 12%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 711px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #wordmark {
+    cursor: default;
+    font-size: 2rem;
+  }
+  #nav {
+    cursor: default;
+  }
+  #nav a {
+    font-size: 1.2rem;
+    margin: 1.69rem;
+    transition: ease-in 0.69s;
+  }
+  #nav a:hover {
+    color: #575068;
+    transition: ease-out 0.42s;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  html {
+    display: none;
+  }
+}
