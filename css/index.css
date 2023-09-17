@@ -45,7 +45,8 @@ a {
     display: flex;
     justify-content: center;
     column-gap: 6.9%;
-    margin: 6.9% 0 11.69% 0;
+    margin: 11.69%;
+    margin-bottom: 24.2%;
   }
   #portrait {
     width: 42%;
