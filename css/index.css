@@ -1,18 +1,15 @@
 html {
+  cursor: default;
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
-  margin: 1rem 12% 1rem 12%;
+  margin: 2% 12% 2% 12%;
 }
 html::-webkit-scrollbar {
   display: none;
-}
-
-span {
-  cursor: default;
 }
 
 a {
@@ -20,7 +17,7 @@ a {
   color: white;
 }
 
-@media only screen and (min-width: 717px) {
+@media only screen and (min-width: 1069px) {
   header {
     scroll-snap-align: end;
     display: flex;
@@ -31,9 +28,7 @@ a {
     font-weight: 600;
     font-size: 2rem;
   }
-  #nav {
-    cursor: default;
-  }
+
   #nav a {
     font-weight: 400;
     font-size: 1.2rem;
@@ -48,13 +43,13 @@ a {
   #summary {
     display: flex;
     justify-content: center;
-    column-gap: 6.9%;
-    margin: 11.69%;
-    margin-bottom: 24.2%;
+    column-gap: 6.9vh;
+    margin: 20.69vh;
+    margin-bottom: 40.69vh;
   }
   #portrait {
-    width: 42%;
-    height: 42%;
+    width: 42vh;
+    height: 42vh;
   }
   #detail {
     display: flex;
@@ -80,21 +75,53 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    /* temp */
-    row-gap: 48rem;
-    /* temp */
   }
-  #content > div {
+  .content_block {
     scroll-snap-align: start;
     padding: 2rem;
   }
-  #content > div > span {
+  .content_block > span {
     font-weight: 400;
-    font-size: 1.69rem;
+    font-size: 2.69rem;
+  }
+
+  #about_data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 40.69vh;
+  }
+  #quote {
+    font-size: 1.42rem;
+    font-weight: 200;
+    margin: 8vh 0 12vh 0;
+  }
+  #skills {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 8vh;
+  }
+  .skill {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+  .level {
+    font-weight: 100;
+    font-size: 1rem;
+    margin: 0 0 0 0;
+  }
+
+  #projects_data {
+    margin-bottom: 80.69vh;
+  }
+
+  #contact_data {
+    margin-bottom: 80.69vh;
   }
 }
 
-@media only screen and (max-width: 717px) {
+@media only screen and (max-width: 1069px) {
   html {
     display: none;
   }
