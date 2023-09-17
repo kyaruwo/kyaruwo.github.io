@@ -1,10 +1,14 @@
 html {
+  overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
   margin: 1rem 12% 1rem 12%;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
 
 span {
