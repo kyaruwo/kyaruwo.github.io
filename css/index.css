@@ -90,12 +90,12 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    margin-bottom: 40.69vh;
+    margin: 12vh 0 12vh 0;
+    gap: 12vh 0;
   }
   #quote {
     font-size: 1.42rem;
     font-weight: 200;
-    margin: 8vh 0 12vh 0;
   }
   #skills {
     display: grid;
