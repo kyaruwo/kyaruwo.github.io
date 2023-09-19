@@ -1,1 +1,1 @@
-<center>life is not daijoubu</center>
+<p align="center">life is not daijoubu</p>
