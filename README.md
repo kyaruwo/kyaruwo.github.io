@@ -1,1 +1,1 @@
-life is not daijoubu
+<center>life is not daijoubu</center>
