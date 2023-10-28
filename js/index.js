@@ -1,56 +1,112 @@
-const skills_list = [
-    {
-        skill: "Rust",
-        level: "Novice",
-        sicode: "rust"
-    },
-    {
-        skill: "SQLite",
-        level: "Novice",
-        sicode: "sqlite"
-    },
-    {
-        skill: "Godot",
-        level: "Novice",
-        sicode: "godot"
-    },
-    {
-        skill: "Python",
-        level: "Novice",
-        sicode: "py"
-    },
-    {
-        skill: "HTML",
-        level: "Novice",
-        sicode: "html"
-    },
-    {
-        skill: "CSS",
-        level: "Novice",
-        sicode: "css"
-    },
-    {
-        skill: "JavaScript",
-        level: "Novice",
-        sicode: "js"
-    },
-    {
-        skill: "PHP",
-        level: "Novice",
-        sicode: "php"
-    }
-];
-
-const skills_div = document.getElementById("skills");
-
-skills_list.forEach(data => {
-    skills_div.innerHTML += `
-    <div>
-        <img src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark" />
+function home() {
+    const main = document.getElementById("main");
+    main.innerHTML = `
+    <div id="home" class="grid">
+        <img id="portrait" src="assets/tako.gif" />
+        <div id="details">
+        <p>Hi, I'm</p>
+        <h>kyaruwo</h>
+        <span><span>Backend</span> Developer</span>
         <div>
-            <h class=skill>${data.skill}</h>
-            <p class=level>${data.level}</p>
+            <a target="_blank" href="https://github.com/kyaruwo">
+                <img src="https://skillicons.dev/icons?i=github&theme=dark" />
+            </a>
+        </div>
         </div>
     </div>
-    `
-});
+    `;
+}
+
+function languages() {
+    const languages = [
+        {
+            language: "Rust",
+            level: "Novice",
+            sicode: "rust"
+        },
+        {
+            language: "SQLite",
+            level: "Novice",
+            sicode: "sqlite"
+        },
+        {
+            language: "Godot",
+            level: "Novice",
+            sicode: "godot"
+        },
+        {
+            language: "Python",
+            level: "Novice",
+            sicode: "python"
+        },
+        {
+            language: "HTML",
+            level: "Novice",
+            sicode: "html"
+        },
+        {
+            language: "CSS",
+            level: "Novice",
+            sicode: "css"
+        },
+        {
+            language: "JS",
+            level: "Novice",
+            sicode: "js"
+        },
+        {
+            language: "PHP",
+            level: "Novice",
+            sicode: "php"
+        }
+    ];
+
+    const main = document.getElementById("main");
+    main.innerHTML = "<div id='languages' class='grid'></div>";
+
+    const languages_div = document.getElementById("languages");
+    languages.forEach(data => {
+        languages_div.innerHTML += `
+        <div>
+            <img src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark" />
+            <div>
+                <h>${data.language}</h>
+                <p>${data.level}</p>
+            </div>
+        </div>
+        `
+    });
+}
+
+function tools() {
+    const tools = [
+        {
+            tool: "VSCode",
+            sicode: "vscode"
+        },
+        {
+            tool: "GitHub",
+            sicode: "github"
+        },
+        {
+            tool: "Discord",
+            sicode: "discord"
+        }
+    ];
+
+    const main = document.getElementById("main");
+    main.innerHTML = "<div id='tools' class='grid'></div>";
+
+    const tools_div = document.getElementById("tools");
+    tools.forEach(data => {
+        tools_div.innerHTML += `
+        <div>
+            <img src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark" />
+            <div><h>${data.tool}</h></div>
+        </div>
+        `
+    });
+}
+
+// onload
+home();

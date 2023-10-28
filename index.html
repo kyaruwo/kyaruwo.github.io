@@ -10,52 +10,29 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico/css/pico.min.css" />
     <link rel="stylesheet" href="css/index.css" />
 
     <script src="js/index.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <span id="wordmark">kyaruwo</span>
-
-      <div id="nav">
-        <a href="#about">About</a>
+  <body class="container">
+    <!-- NAV -->
+    <nav>
+      <span onclick="home()">kyaruwo</span>
+      <div>
+        <a onclick="languages()">Languages</a>
+        <a onclick="tools()">Tools</a>
       </div>
-    </header>
+    </nav>
+    <!-- ./ NAV -->
 
-    <div id="summary">
-      <img
-        id="portrait"
-        src="assets/tako.gif"
-        alt="takoyaruwo"
-        draggable="false" />
-      <div id="detail">
-        <span id="greeting">Hi, I'm</span>
-        <span id="username">kyaruwo</span>
-        <span id="role">Developer</span>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/kyaruwo">
-          <img
-            title="kyaruwo"
-            src="https://skillicons.dev/icons?i=github&theme=dark"
-            alt="github/kyaruwo" />
-        </a>
-      </div>
-    </div>
-
-    <div id="content">
-      <div id="about" class="content_block">
-        <span>About Me</span>
-        <div id="about_data">
-          <div id="quote">
-            <span>life is not daijoubu</span>
-          </div>
-          <div id="skills"></div>
-        </div>
-      </div>
-    </div>
+    <!-- MAIN -->
+    <!-- Dynamic Content -->
+    <main id="main" class="container-fluid"></main>
+    <!-- ./ Dynamic Content -->
+    <!-- ./ MAIN -->
   </body>
 </html>
