@@ -22,10 +22,17 @@
     <!-- NAV -->
     <nav>
       <span onclick="home()">kyaruwo</span>
-      <div>
+      <div id="nav-bar">
         <a onclick="languages()">Languages</a>
         <a onclick="tools()">Tools</a>
       </div>
+      <details id="nav-borgar" role="list" dir="rtl">
+        <summary aria-haspopup="listbox">Menu</summary>
+        <ul role="listbox">
+          <li onclick="languages()">Languages</li>
+          <li onclick="tools()">Tools</li>
+        </ul>
+      </details>
     </nav>
     <!-- ./ NAV -->
 
