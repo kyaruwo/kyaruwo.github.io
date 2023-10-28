@@ -17,112 +17,108 @@ a {
   color: white;
 }
 
-@media only screen and (min-width: 1069px) {
-  header {
-    scroll-snap-align: end;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #wordmark {
-    font-weight: 600;
-    font-size: 2rem;
-  }
-
-  #nav a {
-    font-weight: 400;
-    font-size: 1.2rem;
-    margin: 1.69rem;
-    transition: ease-in 0.69s;
-  }
-  #nav a:hover {
-    color: #575068;
-    transition: ease-out 0.42s;
-  }
-
-  #summary {
-    display: flex;
-    justify-content: center;
-    column-gap: 6.9vh;
-    margin: 20.69vh;
-    margin-bottom: 40.69vh;
-  }
-  #portrait {
-    width: 42vh;
-    height: 42vh;
-  }
-  #detail {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #greeting {
-    font-weight: 200;
-    font-size: 1.69rem;
-  }
-  #username {
-    font-weight: 800;
-    font-size: 4.2rem;
-  }
-  #role {
-    font-weight: 400;
-    font-size: 2rem;
-  }
-
-  #content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-  }
-  .content_block {
-    scroll-snap-align: start;
-    padding: 2rem;
-  }
-  .content_block > span {
-    font-weight: 400;
-    font-size: 2.69rem;
-  }
-
-  #about_data {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    margin: 12vh 0 12vh 0;
-    gap: 12vh 0;
-  }
-  #quote {
-    font-size: 1.42rem;
-    font-weight: 200;
-  }
-  #skills {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 8vh;
-  }
-  .skill {
-    font-weight: 200;
-    font-size: 2rem;
-  }
-  .level {
-    font-weight: 100;
-    font-size: 1rem;
-    margin: 0 0 0 0;
-  }
-
-  #projects_data {
-    margin-bottom: 80.69vh;
-  }
-
-  #contact_data {
-    margin-bottom: 80.69vh;
-  }
+header {
+  scroll-snap-align: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#wordmark {
+  font-weight: 600;
+  font-size: 2rem;
+  transition: ease-in 0.69s;
+}
+#wordmark:hover {
+  color: #575068;
+  transition: ease-out 0.42s;
+}
+#nav a {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 1.69rem;
+  transition: ease-in 0.69s;
+}
+#nav a:hover {
+  color: #575068;
+  transition: ease-out 0.42s;
 }
 
-@media only screen and (max-width: 1069px) {
-  html {
-    display: none;
-  }
+#summary {
+  display: flex;
+  justify-content: center;
+  column-gap: 6.9vh;
+  margin: 20.69vh;
+  margin-bottom: 40.69vh;
+}
+#portrait {
+  width: 42vh;
+  height: 42vh;
+}
+#detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#greeting {
+  font-weight: 200;
+  font-size: 1.69rem;
+}
+#username {
+  font-weight: 800;
+  font-size: 4.2rem;
+}
+#role {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.content_block {
+  scroll-snap-align: start;
+  padding: 2rem;
+}
+.content_block > span {
+  font-weight: 400;
+  font-size: 2.69rem;
+}
+
+#about_data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 12vh 0 12vh 0;
+  gap: 12vh 0;
+}
+#quote {
+  font-size: 1.42rem;
+  font-weight: 200;
+}
+#skills {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 8vh;
+}
+.skill {
+  font-weight: 200;
+  font-size: 2rem;
+}
+.level {
+  font-weight: 100;
+  font-size: 1rem;
+  margin: 0 0 0 0;
+}
+
+#projects_data {
+  margin-bottom: 80.69vh;
+}
+
+#contact_data {
+  margin-bottom: 80.69vh;
 }

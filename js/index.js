@@ -1,12 +1,12 @@
 const skills_list = [
     {
-        skill: "Python",
-        level: "Competent",
-        sicode: "python"
+        skill: "Rust",
+        level: "Novice",
+        sicode: "rust"
     },
     {
         skill: "SQLite",
-        level: "Competent",
+        level: "Novice",
         sicode: "sqlite"
     },
     {
@@ -15,9 +15,9 @@ const skills_list = [
         sicode: "godot"
     },
     {
-        skill: "NodeJS",
+        skill: "Python",
         level: "Novice",
-        sicode: "nodejs"
+        sicode: "py"
     },
     {
         skill: "HTML",
@@ -39,9 +39,9 @@ const skills_list = [
         level: "Novice",
         sicode: "php"
     }
-]
+];
 
-const skills_div = document.getElementById("skills")
+const skills_div = document.getElementById("skills");
 
 skills_list.forEach(data => {
     skills_div.innerHTML += `
