@@ -27,19 +27,19 @@ function languages() {
             sicode: "rust",
         },
         {
-            language: "SQLite",
+            language: "SQL",
             level: "Novice",
-            sicode: "sqlite",
-        },
-        {
-            language: "Godot",
-            level: "Novice",
-            sicode: "godot",
+            sicode: "mysql",
         },
         {
             language: "Python",
             level: "Novice",
             sicode: "python",
+        },
+        {
+            language: "Godot",
+            level: "Novice",
+            sicode: "godot",
         },
     ];
 
