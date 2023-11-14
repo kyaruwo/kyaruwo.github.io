@@ -35,7 +35,7 @@ nav a:hover {
 }
 
 /* BORGAR */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 991px) {
     #nav-bar {
         display: none;
     }
@@ -46,7 +46,7 @@ nav a:hover {
         background-color: black;
     }
 }
-@media screen and (min-width: 821px) {
+@media screen and (min-width: 992px) {
     #nav-borgar {
         display: none;
     }
@@ -127,7 +127,7 @@ main {
 
 /* TOOLS */
 #tools {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
 }
 #tools img {
     height: 4.2rem;
