@@ -110,7 +110,7 @@ main {
 
 /* LANGUAGES */
 #languages {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
 }
 #languages img {
     height: 4rem;
@@ -127,7 +127,7 @@ main {
 
 /* TOOLS */
 #tools {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
 }
 #tools img {
     height: 4.2rem;

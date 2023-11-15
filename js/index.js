@@ -22,11 +22,6 @@ function home() {
 function languages() {
     const languages = [
         {
-            language: "go",
-            level: "Novice",
-            sicode: "go",
-        },
-        {
             language: "Rust",
             level: "Novice",
             sicode: "rust",
@@ -35,31 +30,6 @@ function languages() {
             language: "SQL",
             level: "Competent",
             sicode: "mysql",
-        },
-        {
-            language: "Python",
-            level: "Novice",
-            sicode: "python",
-        },
-        {
-            language: "JavaScript",
-            level: "Novice",
-            sicode: "javascript",
-        },
-        {
-            language: "HTML",
-            level: "Novice",
-            sicode: "html",
-        },
-        {
-            language: "PHP",
-            level: "Novice",
-            sicode: "php",
-        },
-        {
-            language: "Godot",
-            level: "Hobby",
-            sicode: "godot",
         },
     ];
 
@@ -85,21 +55,12 @@ function languages() {
 function tools() {
     const tools = [
         {
-            tool: "Discord",
-            sicode: "discord",
-        },
-        {
             tool: "VSCode",
             sicode: "vscode",
         },
         {
             tool: "GitHub",
             sicode: "github",
-        },
-
-        {
-            tool: "Godot",
-            sicode: "godot",
         },
     ];
 
