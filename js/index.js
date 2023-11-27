@@ -28,7 +28,7 @@ function languages() {
         },
         {
             language: "SQL",
-            level: "Competent",
+            level: "Novice",
             sicode: "mysql",
         },
     ];
