@@ -57,7 +57,8 @@ nav a:hover {
 /* MAIN */
 main {
     text-align: center;
-    padding-top: 8vh !important;
+    padding-top: 4.2vh !important;
+    padding-bottom: 2.4vh !important;
 }
 /* ./ MAIN */
 
@@ -67,12 +68,8 @@ main {
     justify-items: center;
 }
 #home #portrait {
-    height: 20rem;
+    width: 20rem;
     margin-bottom: 2rem;
-}
-#home img {
-    height: 4rem;
-    margin-top: 1rem;
 }
 #details {
     display: flex;
@@ -106,6 +103,10 @@ main {
     color: #575068;
     transition: ease-out 0.69s;
 }
+#details img {
+    width: 4rem;
+    margin-top: 1rem;
+}
 /* ./ HOME */
 
 /* LANGUAGES */
@@ -113,7 +114,7 @@ main {
     grid-template-columns: auto auto;
 }
 #languages img {
-    height: 4rem;
+    width: 4rem;
 }
 #languages h {
     font-weight: 200;
@@ -130,7 +131,7 @@ main {
     grid-template-columns: auto auto;
 }
 #tools img {
-    height: 4.2rem;
+    width: 4.2rem;
 }
 #tools h {
     font-weight: 200;
