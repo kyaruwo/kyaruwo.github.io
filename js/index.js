@@ -6,7 +6,7 @@ function home() {
         <div class="flex flex-col items-center gap-4">
             <p class="text-2xl">Hi I'm</p>
             <h
-                class="text-8xl font-black -mt-8 transition-all ease-in text-ina_orange duration-2420 hover:transition-all hover:ease-out hover:text-ika_purple hover:duration-690"
+                class="text-8xl font-black -mt-8 transition-all ease-in text-ina_orange duration-2420 hover:transition-all hover:ease-out hover:text-inai_purple hover:duration-690"
             >
                 kyaruwo
             </h>
