@@ -14,14 +14,16 @@
 
     <body class="bg-ink_black text-ina_heart">
         <!-- NAV -->
-        <nav class="flex justify-around items-end h-20 mb-24">
+        <nav class="flex justify-around items-center h-20">
             <button
                 onclick="home()"
                 class="font-black text-5xl transition-all ease-in duration-2420 text-inai_purple hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-690"
             >
                 kyaruwo
             </button>
-            <div class="flex justify-between gap-20 font-semibold text-2xl">
+            <div
+                class="max-lg:hidden flex justify-between gap-20 font-semibold text-2xl"
+            >
                 <button
                     class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
                     onclick="home()"
@@ -41,12 +43,66 @@
                     Tools
                 </button>
             </div>
+
+            <svg
+                id="borgar_open"
+                onclick="borgar()"
+                class="lg:hidden block h-10 w-10"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+            </svg>
+            <svg
+                id="borgar_close"
+                onclick="borgar()"
+                class="lg:hidden h-10 w-10 hidden"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                />
+            </svg>
         </nav>
+
+        <div id="borgar_menu" class="lg:hidden mt-8 hidden">
+            <div
+                class="flex flex-col gap-4 font-semibold bg-ink_black text-2xl"
+            >
+                <button
+                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    onclick="home()"
+                >
+                    Home
+                </button>
+                <button
+                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    onclick="languages()"
+                >
+                    Languages
+                </button>
+                <button
+                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    onclick="tools()"
+                >
+                    Tools
+                </button>
+            </div>
+        </div>
         <!-- ./ NAV -->
 
         <!-- MAIN -->
         <!-- Dynamic Content -->
-        <main id="main"></main>
+        <main id="main" class="mt-24"></main>
         <!-- ./ Dynamic Content -->
         <!-- ./ MAIN -->
     </body>

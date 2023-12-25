@@ -1,3 +1,22 @@
+function borgar() {
+    const open = document.getElementById("borgar_open").classList;
+    const close = document.getElementById("borgar_close").classList;
+    const menu = document.getElementById("borgar_menu").classList;
+    const main = document.getElementById("main").classList;
+
+    if (close.contains("hidden")) {
+        menu.remove("hidden");
+        close.remove("hidden");
+        open.add("hidden");
+        main.add("max-lg:hidden");
+    } else {
+        menu.add("hidden");
+        close.add("hidden");
+        open.remove("hidden");
+        main.remove("max-lg:hidden");
+    }
+}
+
 function home() {
     const main = document.getElementById("main");
     main.innerHTML = `
