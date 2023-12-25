@@ -7,42 +7,46 @@
         <link rel="shortcut icon" href="assets/tako.ico" type="image/x-icon" />
         <title>kyaruwo</title>
 
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&display=swap"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@picocss/pico/css/pico.min.css"
-        />
         <link rel="stylesheet" href="css/index.css" />
 
         <script src="js/index.js" defer></script>
     </head>
 
-    <body class="container">
+    <body class="bg-ink_black text-ina_heart">
         <!-- NAV -->
-        <nav>
-            <span onclick="home()">kyaruwo</span>
-            <div id="nav-bar">
-                <a onclick="home()">Home</a>
-                <a onclick="languages()">Languages</a>
-                <a onclick="tools()">Tools</a>
+        <nav class="flex justify-around items-end h-20 mb-24">
+            <button
+                onclick="home()"
+                class="font-black text-5xl transition-all ease-in duration-2420 text-ika_purple hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-690"
+            >
+                kyaruwo
+            </button>
+            <div class="flex justify-between gap-20 font-semibold text-2xl">
+                <button
+                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    onclick="home()"
+                >
+                    Home
+                </button>
+                <button
+                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    onclick="languages()"
+                >
+                    Languages
+                </button>
+                <button
+                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    onclick="tools()"
+                >
+                    Tools
+                </button>
             </div>
-            <details id="nav-borgar" role="list" dir="rtl">
-                <summary aria-haspopup="listbox">Menu</summary>
-                <ul role="listbox">
-                    <li onclick="home()">Home</li>
-                    <li onclick="languages()">Languages</li>
-                    <li onclick="tools()">Tools</li>
-                </ul>
-            </details>
         </nav>
         <!-- ./ NAV -->
 
         <!-- MAIN -->
         <!-- Dynamic Content -->
-        <main id="main" class="container-fluid"></main>
+        <main id="main"></main>
         <!-- ./ Dynamic Content -->
         <!-- ./ MAIN -->
     </body>
