@@ -20,29 +20,36 @@ function borgar() {
 function home() {
     const main = document.getElementById("main");
     main.innerHTML = `
-    <div class="lg:ml-28 lg:mr-28 grid lg:grid-cols-2 justify-around justify-items-center items-center">
-        <img class="size-96" src="assets/tako.gif" />
+    <div
+        class="lg:ml-28 lg:mr-28 grid lg:grid-cols-2 justify-around justify-items-center items-center"
+    >
+        <img
+            class="max-sm:size-64 size-96 transition-all ease-in-out duration-2420"
+            src="assets/tako.gif"
+        />
         <div class="flex flex-col items-center gap-4">
-            <p class="text-2xl mt-4">Hi I'm</p>
+            <p
+                class="max-sm:text-base text-2xl mt-4 transition-all ease-in-out duration-2420"
+            >
+                Hi I'm
+            </p>
             <h
-                class="text-8xl font-black -mt-8 transition-all ease-in text-ina_orange duration-2420 hover:transition-all hover:ease-out hover:text-inai_purple hover:duration-690"
+                class="max-sm:text-6xl text-8xl font-black -mt-8 transition-all ease-in text-ina_orange duration-2420 hover:transition-all hover:ease-out hover:text-inai_purple hover:duration-690"
             >
                 kyaruwo
             </h>
-            <h class="text-4xl">
+            <h class="max-sm:text-2xl text-4xl">
                 <span
                     class="transition-all ease-in duration-2420 hover:transition-all hover:ease-out hover:text-ika_purple hover:duration-690"
                     >Backend</span
                 >
-                Developer
+                <span class="transition-all ease-in-out duration-2420"
+                    >Developer</span
+                >
             </h>
-            <a
-                class="mt-2"
-                target="_blank"
-                href="https://github.com/kyaruwo"
-            >
+            <a class="mt-2" target="_blank" href="https://github.com/kyaruwo">
                 <img
-                    class="size-20"
+                    class="max-sm:size-16 size-20 transition-all ease-in-out duration-2420"
                     src="https://skillicons.dev/icons?i=github&theme=dark"
                 />
             </a>
