@@ -1,10 +1,10 @@
 function home() {
     const main = document.getElementById("main");
     main.innerHTML = `
-    <div class="flex justify-evenly items-center">
+    <div class="lg:ml-28 lg:mr-28 grid lg:grid-cols-2 justify-around justify-items-center items-center">
         <img class="size-96" src="assets/tako.gif" />
         <div class="flex flex-col items-center gap-4">
-            <p class="text-2xl">Hi I'm</p>
+            <p class="text-2xl mt-4">Hi I'm</p>
             <h
                 class="text-8xl font-black -mt-8 transition-all ease-in text-ina_orange duration-2420 hover:transition-all hover:ease-out hover:text-inai_purple hover:duration-690"
             >
