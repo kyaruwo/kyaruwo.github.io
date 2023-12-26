@@ -1,20 +1,8 @@
 function borgar() {
-    const open = document.getElementById("borgar_open").classList;
-    const close = document.getElementById("borgar_close").classList;
-    const menu = document.getElementById("borgar_menu").classList;
-    const main = document.getElementById("main").classList;
-
-    if (close.contains("hidden")) {
-        menu.remove("hidden");
-        close.remove("hidden");
-        open.add("hidden");
-        main.add("max-lg:hidden");
-    } else {
-        menu.add("hidden");
-        close.add("hidden");
-        open.remove("hidden");
-        main.remove("max-lg:hidden");
-    }
+    document.getElementById("borgar_open").classList.toggle("hidden");
+    document.getElementById("borgar_close").classList.toggle("hidden");
+    document.getElementById("borgar_menu").classList.toggle("hidden");
+    document.getElementById("main").classList.toggle("max-lg:hidden");
 }
 
 function home() {
@@ -70,10 +58,30 @@ function languages() {
             level: "Novice",
             sicode: "mysql",
         },
+        {
+            language: "Regex",
+            level: "Novice",
+            sicode: "regex",
+        },
+        {
+            language: "JavaScript",
+            level: "Novice",
+            sicode: "javascript",
+        },
+        {
+            language: "HTML",
+            level: "Novice",
+            sicode: "html",
+        },
+        {
+            language: "tailwindcss",
+            level: "Novice",
+            sicode: "tailwindcss",
+        },
     ];
 
     const main = document.getElementById("main");
-    main.innerHTML = `<div id="languages" class="flex justify-evenly text-center"></div>`;
+    main.innerHTML = `<div id="languages" class="grid max-lg:grid-cols-2 lg:grid-cols-3 gap-8"></div>`;
 
     const languages_div = document.getElementById("languages");
     languages.forEach((data) => {
@@ -83,7 +91,7 @@ function languages() {
                 class="size-20"
                 src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark"
             />
-            <h class="text-4xl pt-1">${data.language}</h>
+            <h class="max-lg:text-2xl lg:text-4xl pt-1">${data.language}</h>
             <p class="text-base">${data.level}</p>
         </div>
         `;
@@ -103,7 +111,7 @@ function tools() {
     ];
 
     const main = document.getElementById("main");
-    main.innerHTML = `<div id="tools" class="flex justify-evenly text-center"></div>`;
+    main.innerHTML = `<div id="tools" class="grid grid-cols-2 gap-8"></div>`;
 
     const tools_div = document.getElementById("tools");
     tools.forEach((data) => {
