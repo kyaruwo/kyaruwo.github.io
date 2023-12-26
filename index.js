@@ -9,7 +9,7 @@ function home() {
     const main = document.getElementById("main");
     main.innerHTML = `
     <div
-        class="lg:ml-28 lg:mr-28 grid lg:grid-cols-2 justify-around justify-items-center items-center"
+        class="grid lg:grid-cols-2 justify-around justify-items-center items-center"
     >
         <img
             class="max-sm:size-64 size-96 transition-all ease-in-out duration-2420"
