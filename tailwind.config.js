@@ -1,9 +1,10 @@
+/*
+tailwindcss\tailwindcss.exe -i tailwindcss\tailwind.css -o index.css --minify --watch
+*/
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-        "../kyaruwo.github.io/index.html",
-        "../kyaruwo.github.io/js/*.js",
-    ],
+    content: ["index.html", "index.js"],
     theme: {
         extend: {
             colors: {
@@ -22,6 +23,3 @@ module.exports = {
     },
     plugins: [],
 };
-
-// https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.4.0
-// tailwindcss\tailwindcss.exe -i tailwindcss\tailwind.css -o css\index.css --minify --watch
