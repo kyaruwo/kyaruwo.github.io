@@ -14,7 +14,8 @@
 
     <body class="bg-ink_black text-ina_heart">
         <!-- NAV -->
-        <nav class="flex justify-around items-center h-20">
+
+        <nav class="max-lg:hidden flex justify-around items-center h-20">
             <button
                 onclick="home()"
                 class="font-black text-5xl transition-all ease-in duration-2420 text-inai_purple hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-690"
@@ -42,57 +43,63 @@
                     Tools
                 </button>
             </div>
-
-            <div class="lg:hidden">
-                <svg
-                    id="borgar_open"
-                    onclick="borgar()"
-                    class="h-10 w-10 stroke-ina_heart"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                </svg>
-                <svg
-                    id="borgar_close"
-                    onclick="borgar()"
-                    class="h-10 w-10 stroke-ina_orange hidden"
-                    viewBox="0 0 24 24"
-                    stroke-width="2"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                    />
-                </svg>
-            </div>
         </nav>
 
+        <nav class="lg:hidden flex justify-around items-center h-20">
+            <button
+                onclick="home();borgar_close()"
+                class="font-black text-5xl transition-all ease-in duration-2420 text-inai_purple hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-690"
+            >
+                kyaruwo
+            </button>
+
+            <svg
+                id="borgar_open"
+                onclick="borgar_open()"
+                class="h-10 w-10 stroke-ina_heart"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+            </svg>
+            <svg
+                id="borgar_close"
+                onclick="borgar_close()"
+                class="h-10 w-10 stroke-ina_orange hidden"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                />
+            </svg>
+        </nav>
         <div id="borgar_menu" class="lg:hidden mt-20 hidden">
             <div class="font-semibold text-2xl flex flex-col gap-8">
                 <button
                     id="borgar_home"
                     class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
-                    onclick="home();borgar()"
+                    onclick="home();borgar_close()"
                 >
                     Home
                 </button>
                 <button
                     id="borgar_languages"
                     class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
-                    onclick="languages();borgar()"
+                    onclick="languages();borgar_close()"
                 >
                     Languages
                 </button>
                 <button
                     id="borgar_tools"
                     class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
-                    onclick="tools();borgar()"
+                    onclick="tools();borgar_close()"
                 >
                     Tools
                 </button>

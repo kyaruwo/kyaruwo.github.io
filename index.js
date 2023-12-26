@@ -1,8 +1,15 @@
-function borgar() {
-    document.getElementById("borgar_open").classList.toggle("hidden");
-    document.getElementById("borgar_close").classList.toggle("hidden");
-    document.getElementById("borgar_menu").classList.toggle("hidden");
-    document.getElementById("main").classList.toggle("max-lg:hidden");
+function borgar_open() {
+    document.getElementById("borgar_open").classList.add("hidden");
+    document.getElementById("borgar_close").classList.remove("hidden");
+    document.getElementById("borgar_menu").classList.remove("hidden");
+    document.getElementById("main").classList.add("max-lg:hidden");
+}
+
+function borgar_close() {
+    document.getElementById("borgar_open").classList.remove("hidden");
+    document.getElementById("borgar_close").classList.add("hidden");
+    document.getElementById("borgar_menu").classList.add("hidden");
+    document.getElementById("main").classList.remove("max-lg:hidden");
 }
 
 function home() {
