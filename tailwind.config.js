@@ -1,5 +1,9 @@
 /*
+
+tailwindcss v3.4.0
+
 tailwindcss\tailwindcss.exe -i tailwindcss\tailwind.css -o index.css --minify --watch
+
 */
 
 /** @type {import('tailwindcss').Config} */
