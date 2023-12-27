@@ -15,29 +15,29 @@
     <body class="bg-ink_black text-ina_heart">
         <!-- NAV -->
         <!-- DESKTOP -->
-        <nav class="flex items-center justify-around h-20 max-lg:hidden">
+        <nav class="flex h-20 items-center justify-around max-lg:hidden">
             <button
                 onclick="home()"
-                class="text-5xl font-black transition-all ease-in duration-2420 text-inai_purple hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-690"
+                class="text-5xl font-black text-inai_purple transition-all duration-2420 ease-in hover:text-ina_orange hover:transition-all hover:duration-690 hover:ease-out"
             >
                 kyaruwo
             </button>
 
             <div class="flex gap-20 text-2xl font-semibold max-lg:hidden">
                 <button
-                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                     onclick="home()"
                 >
                     Home
                 </button>
                 <button
-                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                     onclick="languages()"
                 >
                     Languages
                 </button>
                 <button
-                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                     onclick="tools()"
                 >
                     Tools
@@ -46,10 +46,10 @@
         </nav>
         <!-- ./ DESKTOP -->
         <!-- MOBILE -->
-        <nav class="flex items-center justify-around h-20 lg:hidden">
+        <nav class="flex h-20 items-center justify-around lg:hidden">
             <button
                 onclick="home();borgar_close()"
-                class="text-5xl font-black transition-all ease-in duration-2420 text-inai_purple hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-690"
+                class="text-5xl font-black text-inai_purple transition-all duration-2420 ease-in hover:text-ina_orange hover:transition-all hover:duration-690 hover:ease-out"
             >
                 kyaruwo
             </button>
@@ -57,7 +57,7 @@
             <svg
                 id="borgar_open"
                 onclick="borgar_open()"
-                class="w-10 h-10 stroke-ina_heart"
+                class="h-10 w-10 stroke-ina_heart"
                 viewBox="0 0 24 24"
                 stroke-width="2"
             >
@@ -70,7 +70,7 @@
             <svg
                 id="borgar_close"
                 onclick="borgar_close()"
-                class="hidden w-10 h-10 stroke-ina_orange"
+                class="hidden h-10 w-10 stroke-ina_orange"
                 viewBox="0 0 24 24"
                 stroke-width="2"
             >
@@ -81,25 +81,25 @@
                 />
             </svg>
         </nav>
-        <div id="borgar_menu" class="hidden mt-20 lg:hidden">
+        <div id="borgar_menu" class="mt-20 hidden lg:hidden">
             <div class="flex flex-col gap-8 text-2xl font-semibold">
                 <button
                     id="borgar_home"
-                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                     onclick="home();borgar_close()"
                 >
                     Home
                 </button>
                 <button
                     id="borgar_languages"
-                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                     onclick="languages();borgar_close()"
                 >
                     Languages
                 </button>
                 <button
                     id="borgar_tools"
-                    class="transition-all ease-in duration-690 hover:transition-all hover:ease-out hover:text-ina_orange hover:duration-420"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                     onclick="tools();borgar_close()"
                 >
                     Tools
