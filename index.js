@@ -19,8 +19,8 @@ function home() {
         class="grid items-center justify-around justify-items-center lg:grid-cols-2"
     >
         <img
-            class="max-sm:size-64 size-96 transition-all duration-2420 ease-in-out"
             src="assets/tako.gif"
+            class="max-sm:size-64 size-96 transition-all duration-2420 ease-in-out"
         />
         <div class="flex flex-col items-center gap-4">
             <p
@@ -42,14 +42,10 @@ function home() {
                     >Developer</span
                 >
             </h>
-            <a
-                class="mt-2"
-                target="_blank"
-                href="https://github.com/kyaruwo"
-            >
+            <a href="https://github.com/kyaruwo" target="_blank" class="mt-2">
                 <img
-                    class="max-sm:size-16 size-20 transition-all duration-2420 ease-in-out"
                     src="https://skillicons.dev/icons?i=github&theme=dark"
+                    class="max-sm:size-16 size-20 transition-all duration-2420 ease-in-out"
                 />
             </a>
         </div>
@@ -104,8 +100,8 @@ function languages() {
         languages_div.innerHTML += `
         <div class="flex flex-col items-center">
             <img
-                class="size-20"
                 src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark"
+                class="size-20"
             />
             <h class="pt-1 max-lg:text-2xl lg:text-4xl">${data.language}</h>
             <p class="text-base">${data.level}</p>
@@ -134,8 +130,8 @@ function tools() {
         tools_div.innerHTML += `
         <div class="flex flex-col items-center">
             <img
-                class="size-20"
                 src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark"
+                class="size-20"
             />
             <h class="pt-1 text-4xl">${data.tool}</h>
         </div>
