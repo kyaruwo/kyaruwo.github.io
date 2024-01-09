@@ -61,9 +61,9 @@ function languages() {
             sicode: "rust",
         },
         {
-            language: "SQL",
+            language: "PostgreSQL",
             level: "Novice",
-            sicode: "mysql",
+            sicode: "postgres",
         },
         {
             language: "Regex",
