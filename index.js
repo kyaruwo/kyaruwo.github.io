@@ -53,6 +53,13 @@ function home() {
     `;
 }
 
+function projects() {
+    const main = document.getElementById("main");
+    main.innerHTML = `
+
+    `;
+}
+
 function languages() {
     const languages = [
         {
