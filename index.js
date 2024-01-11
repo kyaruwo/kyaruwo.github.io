@@ -56,6 +56,11 @@ function home() {
 function languages() {
     const languages = [
         {
+            language: "Go",
+            level: "Novice",
+            sicode: "go",
+        },
+        {
             language: "Rust",
             level: "Novice",
             sicode: "rust",
@@ -64,11 +69,6 @@ function languages() {
             language: "PostgreSQL",
             level: "Novice",
             sicode: "postgres",
-        },
-        {
-            language: "Regex",
-            level: "Novice",
-            sicode: "regex",
         },
         {
             language: "JavaScript",
