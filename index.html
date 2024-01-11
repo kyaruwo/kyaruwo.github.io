@@ -31,6 +31,12 @@
                     Home
                 </button>
                 <button
+                    onclick="projects()"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
+                >
+                    Projects
+                </button>
+                <button
                     onclick="languages()"
                     class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                 >
@@ -84,21 +90,24 @@
         <div id="borgar_menu" class="mt-20 hidden lg:hidden">
             <div class="flex flex-col gap-8 text-2xl font-semibold">
                 <button
-                    id="borgar_home"
                     onclick="home();borgar_close()"
                     class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                 >
                     Home
                 </button>
                 <button
-                    id="borgar_languages"
+                    onclick="projects();borgar_close()"
+                    class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
+                >
+                    Languages
+                </button>
+                <button
                     onclick="languages();borgar_close()"
                     class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                 >
                     Languages
                 </button>
                 <button
-                    id="borgar_tools"
                     onclick="tools();borgar_close()"
                     class="transition-all duration-690 ease-in hover:text-ina_orange hover:transition-all hover:duration-420 hover:ease-out"
                 >
