@@ -14,7 +14,7 @@ function borgar_close() {
 
 function home() {
     const main = document.getElementById("main");
-    main.innerHTML = `
+    main.innerHTML = /*html*/ `
     <div
         class="grid items-center justify-around justify-items-center lg:grid-cols-2"
     >
@@ -54,10 +54,42 @@ function home() {
 }
 
 function projects() {
-    const main = document.getElementById("main");
-    main.innerHTML = `
+    const projects = [
+        {
+            img: "",
+            title: "",
+            body: "",
+            languages: [],
+        },
+    ];
 
-    `;
+    const main = document.getElementById("main");
+    main.innerHTML = /*html*/ `<div id="projects" class="flex flex-col max-lg:gap-8 lg:gap-20"></div>`;
+
+    let projects_div = document.getElementById("projects");
+    projects.forEach((project) => {
+        projects_div.innerHTML += /*html*/ `
+        <div class="flex flex-row justify-center max-lg:gap-8 lg:gap-20">
+            <img src="assets/${project.img}" class="max-lg:size-20 lg:size-40 rounded-lg" />
+            <div class="flex flex-col items-center">
+                <h class="font-bold max-lg:text-4xl lg:text-6xl">${project.title}</h>
+                <p class="max-lg:text-xs lg:text-xl">${project.body}</p>
+                <div id="${project.title}_languages" class="mt-4 flex flex-row gap-2"></div>
+            </div>
+        </div>
+        `;
+        project.languages.forEach((language) => {
+            let project_languages_div = document.getElementById(
+                `${project.title}_languages`
+            );
+            project_languages_div.innerHTML += /*html*/ `
+            <img
+                src="https://skillicons.dev/icons?i=${language}&theme=dark"
+                class="max-sm:size-5 max-md:size-7 md:size-9 lg:size-12"
+            />
+            `;
+        });
+    });
 }
 
 function languages() {
@@ -95,7 +127,7 @@ function languages() {
     ];
 
     const main = document.getElementById("main");
-    main.innerHTML = `
+    main.innerHTML = /*html*/ `
     <div
         id="languages"
         class="grid gap-8 max-lg:grid-cols-2 lg:grid-cols-3"
@@ -104,7 +136,7 @@ function languages() {
 
     const languages_div = document.getElementById("languages");
     languages.forEach((data) => {
-        languages_div.innerHTML += `
+        languages_div.innerHTML += /*html*/ `
         <div class="flex flex-col items-center">
             <img
                 src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark"
@@ -130,11 +162,11 @@ function tools() {
     ];
 
     const main = document.getElementById("main");
-    main.innerHTML = `<div id="tools" class="grid grid-cols-2 gap-8"></div>`;
+    main.innerHTML = /*html*/ `<div id="tools" class="grid grid-cols-2 gap-8"></div>`;
 
     const tools_div = document.getElementById("tools");
     tools.forEach((data) => {
-        tools_div.innerHTML += `
+        tools_div.innerHTML += /*html*/ `
         <div class="flex flex-col items-center">
             <img
                 src="https://skillicons.dev/icons?i=${data.sicode}&theme=dark"
